@@ -1,0 +1,15 @@
+label{
+  color:violet;
+}
+input{
+  color: darkmagenta;
+}
+body{
+  color:royalblue;
+}
+select{
+  color: rgb(162, 0, 255);
+}
+option{
+  color: darkred;
+}
