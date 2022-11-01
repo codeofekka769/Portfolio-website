@@ -5,12 +5,45 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <style>
+    label {
+      color: blue;
+    }
+    input{
+      border-radius: 25px;
+    }
+  </style>
+  <link href="myStyle.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
-  <p>
-    10 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est at incidunt temporibus ad laboriosam ex aliquam perferendis recusandae vitae quidem, quia exercitationem modi voluptatem odit reprehenderit quos sit error unde.
-    100 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores similique eos sequi distinctio rerum recusandae ex, odit fugit. Quo iste ea autem saepe incidunt rerum, voluptate laborum ipsam distinctio et?
+  <form style="border: 3px solid black; width: 500px">
+  <label id="name" for="name">name</label><br>
+  <input type="text" name="name" id="name" placeholder="enter your name" required><br>
+  <label id="email.id" for="email.id" >Email</label><br>
+  <input type="email.id" name="email.id" id="email.id" placeholder="enter your email.id" required><br>
+  <label id="number-label" for="number">Roll No.</label><br>
+  <input type="number" name="number" id="number" placeholder="Enter your roll number" min="0" max="100" required><br><br>
+  <select name="drop-down" id="drop-down" class="inputfiels">
+    <option value="Excellent">Excellent</option>
+    <option value="Good">Good</option>
+    <option value="Fair">Fair</option>
+    <option value="Poor">Poor</option>
+  </select><br><br>
+  <label>MY Favorite Topic in HTML</label><br>
+  <input type="checkbox" name="topic1" value="Structuralelements"> Structural Elements<br>
+  <input type="checkbox" name="topic2" value="Links and List">Links and List<br>
+  <input type="checkbox" name="topic3" value="Media">Media <br>
+  <input type="checkbox" name="topic4" value="Tabel">Table<br>
+  <input type="checkbox" name="topic5" value="Form"> Form<br>
+  <input type="checkbox" name="topic6" value="Grouping Element">Grouping Element<br>
 
-  </p>
+  <label>Do You Like the HTML Course</label>
+  <input type="radio" name="course" value="Yes">Yes
+  <input type="radio" name="course" value="No">NO
+  <br><br>
+  <label>Few Words about course</label><br>
+  <textarea class="inputfields" rows="5" cols="50" name="Description" id="Description"></textarea><br><br>
+  <button class="submit" type="button" onclick="alert('Validating')">Submit</button>
+</form>
 </body>
 </html>
